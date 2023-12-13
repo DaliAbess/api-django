@@ -4,7 +4,7 @@ from django.db import models
 class Movie(models.Model):
     hall =models.CharField(max_length=20)
     movie=models.CharField(max_length=20)
-    date=models.DateField()
+#    date=models.DateField()
 class Guest(models.Model):
     name =models.CharField(max_length=20)
     mobile=models.CharField(max_length=20)

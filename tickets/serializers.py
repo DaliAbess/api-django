@@ -4,7 +4,7 @@ from tickets.models import Reservation,Guest,Movie
 class MovieSerializer(serializers.ModelSerializer):
     class Meta :
         model=Movie
-        fields= '__all_'
+        fields= ['pk','hall','movie']
 class ReservationSerializer(serializers.ModelSerializer):
     class Meta :
         model=Reservation
