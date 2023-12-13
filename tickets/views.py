@@ -7,7 +7,8 @@ from rest_framework.response import Response
 from rest_framework import status ,filters
 from rest_framework.views import APIView
 from django.http import Http404
-
+from rest_framework.authentication import BasicAuthentication
+from rest_framework.permissions import IsAuthenticated 
 #1 n
 def no_rest_no_model(request):
     guests=[{
