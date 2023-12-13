@@ -106,8 +106,8 @@ def jls_extract_def():
 
 @api_view (['GET'])
 def search (request):
-    hall = request.GET.get('hall', None)
-    movie= request.GET.get('movie', None)
+    hall = request.data['hall']
+    movie= request.data['movie']
     movies = Movie.objects.filter(
 
         hall=hall ,
