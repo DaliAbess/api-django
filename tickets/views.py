@@ -118,10 +118,10 @@ def search (request):
 @api_view (['POST'])
 def new_reservation (request):
 
-    movie=Movie.objects.get(hall=request.GET.get('hall',none),movie=request.GET.get('movie',none))
+    movie=Movie.objects.get(hall=request.GET.get('hall',None),movie=request.GET.get('movie',None))
     guest= Guest()
-    guest.name=request.GET.get('name',none)
-    guest.mobile=request.GET.get('mobile',none)
+    guest.name=request.GET.get('name',None)
+    guest.mobile=request.GET.get('mobile',None)
     guest.save()
     reservation =Reservation()
     reservation.guest=guest
